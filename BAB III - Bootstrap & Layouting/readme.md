@@ -1,4 +1,4 @@
-## BAB II Python Virtual Enviroment dan Flask
+## BAB III Integrasi CSS Framework Bootstrap & Templating/Layouting
 ### Untuk menjalankan projek
 1. Clone project ini atau download manual dengan format zip kemudian extract.
 2. Buka vscode pada folder BAB III - Bootstrap & Layout
