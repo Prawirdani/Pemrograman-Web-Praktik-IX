@@ -1,0 +1,14 @@
+<!-- Memanggil layout/parent -->
+{% extends 'layout.html' %}
+
+{% block head %}
+<!-- Menampilkan data title yang disisipkan dari kode python -->
+<title>{{ data.title }}</title>
+{% endblock %}
+
+{% block body %}
+<h1>Ini adalah halaman home</h1>
+
+<!-- Menampilkan data nama yang disisipkan dari kode python -->
+<p>Nama saya adalah {{ data['nama'] }}</p>
+{% endblock %}
