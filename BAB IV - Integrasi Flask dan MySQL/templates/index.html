@@ -1,0 +1,36 @@
+<!-- Memanggil layout/parent -->
+{% extends 'layout.html' %}
+
+{% block head %}
+<!-- Menampilkan data title yang disisipkan dari kode python -->
+<title>{{ data.title }}</title>
+{% endblock %}
+
+
+{% block body %}
+<h1>Ini adalah halaman home</h1>
+<table class="table table-striped">
+    <thead>
+        <!-- Judul/heading table -->
+        <tr>
+            <th>Id</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Menampilkan seluruh data dari database dengan for loop ke dalam tabel row -->
+        {% for row in data.users %}
+        <tr>
+            <td>{{ row.0 }}</td>
+            <td>{{ row.1 }}</td>
+            <td>{{ row.2 }}</td>
+            <td>{{ row.3 }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<!-- Menampilkan data nama yang disisipkan dari kode python -->
+{% endblock %}
