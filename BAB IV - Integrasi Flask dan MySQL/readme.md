@@ -22,8 +22,8 @@
     ```
 
 ### Untuk menjalankan projek
-1. Clone project ini atau download manual dengan format zip kemudian extract.
-2. Buka vscode pada folder BAB III - Bootstrap & Layout
+1. Clone Repository ini atau download manual dengan format zip.
+2. Extract folder BAB IV, kemudian buka vscode pada direktori folder tersebut.
 3. Buka terminal vscode.
 4. Inisiasi *Virtual Environtment*, dengan perintah:
     ```shell
