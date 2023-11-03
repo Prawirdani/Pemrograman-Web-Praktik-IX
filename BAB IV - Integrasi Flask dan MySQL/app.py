@@ -29,7 +29,7 @@ def index():
     cur.close()
 
     # masukkan data users kedalam dictionary data
-    data = {"title": "Home", "nama": "John doe", "users": users}
+    data = {"title": "Home", "users": users}
 
     # Render file index.html beserta data
     return render_template("index.html", data=data)
