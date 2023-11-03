@@ -1,0 +1,35 @@
+<!-- Memanggil layout/parent -->
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>Login</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1 class="text-center">Login</h1>
+    <form method="post">
+
+        <!-- Input Email -->
+        <div class="mb-3">
+            <label for="input_password" class="form-label">Email address</label>
+            <input name="inpEmail" id="input_password" type="email" class="form-control" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+
+        <!-- Input Password -->
+        <div class="mb-3">
+            <label for="InputPassword" class="form-label">Password</label>
+            <input name="inpPass" id="input_password" type="password" class="form-control">
+        </div>
+
+        <!-- Tampilkan pesan error jika ada -->
+        {% if msg %}
+        <p class="text-danger">{{ msg }}</p>
+        {% endif %}
+
+        <!-- Tombol Login -->
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+</div>
+{% endblock %}
