@@ -1,0 +1,24 @@
+from app import db
+from datetime import datetime
+
+class Users(db.Model):
+    id = db.Column(db.BigInteger, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(255), nullable=False)
+    email = db.Column(db.String(255), nullable=False, unique=True, index=True)
+    password = db.Column(db.String(255), nullable=False)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    updated_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+    def __repr__(self):
+        return f"<User {self.name}>"
+    
+class Todos(db.Model):
+    id = db.Column(db.BigInteger, primary_key=True, autoincrement=True)
+    todo = db.Column(db.String(255), nullable=False)
+    description = db.Column(db.Text)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    updated_at = db.Column(db.DateTime, default=datetime.utcnow)
+    user_id = db.Column(db.BigInteger, db.ForeignKey(Users.id))
+
+    def __repr__(self):
+        return f"<Todo {self.todo}>"
