@@ -1,5 +1,8 @@
 ## BAB X JSON Web Token (JWT)
 
+### Video Lanjutan (Implementasi JWT)
+https://drive.google.com/file/d/1Yq5oeU3q6o7-VOjiDrIGKdLlOc_TdPD9/view?usp=sharing
+
 ### Untuk menjalankan project
 1. Clone Repository ini atau download manual dengan format zip.
 2. Extract folder BAB X, kemudian buka vscode pada direktori folder tersebut.
